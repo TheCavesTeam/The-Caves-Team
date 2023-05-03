@@ -1,1 +1,30 @@
+--Infinite Fame
+local args = {
+    [1] = 10000000000000
+}
 
+game:GetService("ReplicatedStorage"):WaitForChild("RunwayTapBoostFunc"):InvokeServer(unpack(args))
+
+--Do Fame Run Thing Without Cooldown
+local args = {
+    [1] = workspace:WaitForChild("World"):WaitForChild("Runway"):WaitForChild("Runway"),
+    [2] = {
+        [1] = workspace:WaitForChild("World"):WaitForChild("Runway"):WaitForChild("Runway"):WaitForChild("Stage"):WaitForChild("Steps"):WaitForChild("4.StandStill"),
+        [2] = workspace:WaitForChild("World"):WaitForChild("Runway"):WaitForChild("Runway"):WaitForChild("Stage"):WaitForChild("Steps"):WaitForChild("2.StartWalk"),
+        [3] = workspace:WaitForChild("World"):WaitForChild("Runway"):WaitForChild("Runway"):WaitForChild("Stage"):WaitForChild("Steps"):WaitForChild("3.Walk"),
+        [4] = workspace:WaitForChild("World"):WaitForChild("Runway"):WaitForChild("Runway"):WaitForChild("Stage"):WaitForChild("Steps"):WaitForChild("5.WalkBack"),
+        [5] = workspace:WaitForChild("World"):WaitForChild("Runway"):WaitForChild("Runway"):WaitForChild("Stage"):WaitForChild("Steps"):WaitForChild("1.Start"),
+        [6] = workspace:WaitForChild("World"):WaitForChild("Runway"):WaitForChild("Runway"):WaitForChild("Stage"):WaitForChild("Steps"):WaitForChild("6.WalkBack")
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("WalkTheRunwayFunc"):InvokeServer(unpack(args))
+
+--Inf Tickets
+local args = {
+    [1] = 999999999999999999999,
+    [2] = "Ticket_123"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("onClaimTicketFunc"):InvokeServer(unpack(args))
+--This is just remotes lmao but its op
